@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a, p, ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.ice__img {
+    display: block;
+    position: relative;
+}
+
+@keyframes colors {
+    0% {
+        color: #844a30;
+    }
+
+    /* 10% {
+        color: #ab5d35;
+    } */
+
+    20% {
+        color: #e8c090;
+    }
+
+    /* 30% {
+        color: #e8c090;
+    } */
+
+    40% {
+        color: #ffab43;
+    }
+
+    /* 50% {
+        color: #cfba47;
+    } */
+
+    60% {
+        color: #acd17b;
+    }
+
+    /* 70% {
+        color: #acd17b;
+    } */
+
+    80% {
+        color: #ffa5ba;
+    }
+
+    90% {
+        color: #d64048;
+    }
+
+    100% {
+        color: #844a30;
+    }
+}
+
+.ice__link--f {
+    position: absolute;
+    top: 185px;
+    left: 635px;
+    border-radius: 80%;
+    animation: colors 5000ms linear infinite alternate;
+}
+
+.ice__link--s {
+    position: absolute;
+    top: 320px;
+    left: 78px;
+    animation: colors 5000ms linear infinite alternate;
+}
+
+.ice__link--t {
+    position: absolute;
+    top: 170px;
+    left: 875px;
+    animation: colors 5000ms linear infinite alternate;
+}
+
+.ice__link--f:hover,
+.ice__link--s:hover,
+.ice__link--t:hover {
+    animation-play-state: paused;
+}
+
+.ice__icon {
+    width: 75px;
+    height: 100px;
+    fill: currentColor;
+}
+
+.information {
+    border-radius: 50%;
+    background-color: #FFB8CA;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inf__text {
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+
+letter-spacing: 0.04em;
+
+color: #D41443;
+}
+
+.la {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 315px;
+    left: 160px;
+    opacity: 0;
+    transform: scale(0.1);
+
+    transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.ice__link--s:hover ~ .la {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@keyframes scales 
